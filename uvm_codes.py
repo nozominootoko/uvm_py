@@ -305,7 +305,7 @@ class if_build_code(call_code):
     def main_code(self):
         cont = ''
         vir = "virtual " if self.obj.virtual else ""
-        cont+=f'if(!uvm_config_db #({vir}{self.obj.name})::get(null, "*","{self.inter_if_name}", {self.inter_if_name})) begin'
+        cont+=f'if(!uvm_config_db #({vir}{self.obj.class_name})::get(null, "*","{self.inter_if_name}", {self.inter_if_name})) begin'
         cont+=f'\n\t`uvm_fatal(\"NO_VIF\", "Failed to get {self.obj.name}")\nend\n'
 
         self.content+=cont
