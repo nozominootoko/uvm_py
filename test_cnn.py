@@ -1,6 +1,6 @@
 from uvm_py import *
 
-path = r"cnn\cnn_conv_top.sv"
+path = r"cnn_conv_top.sv"
 dut = uvm_dut(path)
 inf = auto_if(dut)
 
