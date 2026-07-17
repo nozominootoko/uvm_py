@@ -1,0 +1,11 @@
+
+from uvm_py import *
+
+path = r"F:\vivado\cnn\cnn.srcs\sources_1\imports\cnn\cnn_conv_top.sv"
+# dut = uvm_dut(path)
+# inf = auto_if(dut)
+# tb = tb_top_module(dut,inf)
+axi = axi_tr("axi_lite_tr").add_lite().add_stream()
+
+grl_genor = general_generator()
+grl_genor.generate()

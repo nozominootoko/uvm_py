@@ -1,0 +1,1 @@
+UVM_TLM_ANALYSIS_MASK = (1<<8)
