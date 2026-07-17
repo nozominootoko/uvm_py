@@ -1,6 +1,6 @@
 from uvm_py import *
 
-path = r"F:\vivado\cnn\cnn.srcs\sources_1\imports\cnn\cnn_conv_top.sv"
+path = r"cnn\cnn_conv_top.sv"
 dut = uvm_dut(path)
 inf = auto_if(dut)
 
